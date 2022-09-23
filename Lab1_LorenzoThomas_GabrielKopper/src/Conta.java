@@ -3,6 +3,11 @@ public class Conta {
 	private double saldo;
 	private String numero, nome;
 	
+	public Conta(String nome) {
+		this.nome = nome;
+		System.out.println("Nome da conta setado para: " + this.nome);
+	}
+	
 	public Conta(double saldo, String numero) {
 		this.saldo = saldo;
 		this.numero = numero;
@@ -38,10 +43,6 @@ public class Conta {
 		}
 	}
 	 
-	public void Conta(String nome) {
-		this.nome = nome;
-		System.out.println("Nome da conta setado para: " + this.nome);
-	}
 
 	@Override
 	public String toString() {
